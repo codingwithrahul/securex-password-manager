@@ -15,7 +15,7 @@ Designed and developed by @codingwithrahul
 ## Tech Used
 - HTML
 - CSS
-- Vanilla JavaScript
+- JavaScript
 
 ## Live Demo
 https://your-github.github.io/securex-password-manager/
