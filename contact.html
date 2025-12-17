@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SecureX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo" onclick="location.href='index.html'">SecureX</div>
+        <ul>
+            <li onclick="location.href='index.html'">Home</li>
+            <li onclick="location.href='about.html'">About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>Have questions or feedback? Send us a message or connect with me on social links below.</p>
+
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="msg" placeholder="Your Message" rows="5" required></textarea>
+            <button class="btn" type="submit">Send</button>
+        </form>
+
+        <p style="margin-top: 12px; font-size: 14px; color: #555;">
+            (This form doesn’t send emails yet — add a backend or email API when ready.)
+        </p>
+
+        <div class="social-links" style="margin-top: 20px; font-size: 16px;">
+            <p>Connect with me:</p>
+            <p>
+                LinkedIn: <a href="https://www.linkedin.com/in/rahulrojasara" target="_blank">Rahul Rojasara</a><br>
+                GitHub: <a href="https://github.com/codingwithrahul" target="_blank">codingwithrahul</a>
+            </p>
+        </div>
+
+
+        <footer style="margin-top: 30px; font-size: 14px; color: #555;">
+            <p>Built with ❤️ by<strong>@codingwithrahul</strong></p>
+            <p>© 2025 SecureX. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Thanks! We'll get back to you soon.");
+            this.reset();
+        });
+    </script>
+
+</body>
+
+</html>
